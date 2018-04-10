@@ -41,7 +41,7 @@ try{
     var posix = require('posix');
     try {
     logger.info('Setting POSIX');
-        posix.setrlimit('nofile', { soft: 100000, hard: 100000 });
+        posix.setrlimit('nofile', { soft: 1000, hard: 1000 }); // OLD VALUE soft:100000,hard:100000
     logger.info('POSIX Set');
     }
     catch(e){

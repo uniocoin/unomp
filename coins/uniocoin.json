@@ -1,0 +1,9 @@
+{
+    "name": "Uniocoin",
+    "symbol": "UOC",
+    "algorithm": "x11",
+
+    "peerMagic":"ba3c2bef",
+    "peerMagicTestnet":"d341badf",
+    "mposDiffMultiplier": 256
+}
