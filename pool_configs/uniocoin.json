@@ -1,0 +1,80 @@
+{
+    "enabled": true,
+    "coin": "uniocoin.json",
+
+    "auxes": [ // Defines auxillery coins
+       
+    ],
+    "address": "UNhPn4wQDy6dmU172bHweELBhn5TZo195A",
+
+    "rewardRecipients": {
+        "UNhPn4wQDy6dmU172bHweELBhn5TZo195A": 1.5,
+        "UTqXommz3pMNuRZsRE2CfkDswmErAuTyee": 0.5
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 30,
+        "minimumPayment": 0.1,
+        "daemon": {
+            "host": "192.168.0.151",
+            "port": 9338,
+            "user": "wtechunio3",
+            "password": "wtechunio3password"
+        }
+    },
+
+    "ports": {
+        "3607": {
+            "diff": 2048,
+	    "varDiff": {
+                "minDiff": 1024,
+                "maxDiff": 128000,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "3608": {
+            "diff": 32,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "3609": {
+            "diff": 256
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "192.168.0.151",
+            "port": 9338,
+            "user": "wtechunio3",
+            "password": "wtechunio3password"
+        }
+    ],
+
+    "p2p": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 9838,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "me",
+        "password": "mypass",
+        "database": "ltc",
+        "checkPassword": false,
+        "autoCreateWorker": false
+    }
+
+}
